@@ -9,7 +9,7 @@ import About from './pages/About';
 import Amenities from './pages/Amenities';
 import Contact from './pages/Contact';
 import Booking from './pages/Booking';
-import './index.css';
+import './styles/index.css';
 
 function App() {
   return (
