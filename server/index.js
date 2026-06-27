@@ -1,7 +1,32 @@
-// Server code removed per user request — placeholder file.
-// The original server/index.js was deleted to revert the repository to its prior state.
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import stripePackage from 'stripe';
+import nodemailer from 'nodemailer';
+import cron from 'node-cron';
+import { 
+  init as initDb, 
+  getRooms, 
+  getRoomById, 
+  createBooking, 
+  getBookings, 
+  updateBookingPayment, 
+  countRooms, 
+  seedRooms 
+} from './db.js';
 
-// No runtime behavior here.
+dotenv.config();
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+const stripe = process.env.STRIPE_SECRET_KEY ? stripePackage(process.env.STRIPE_SECRET_KEY) : null;
+
+app.use(cors());
+app.use(express.json());
+
+// Initialize Database
+initDb();
+
 app.get('/api/bookings', requireAdmin, (req, res) => {
   try {
     const rows = getBookings();

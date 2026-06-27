@@ -1,8 +1,5 @@
-// db helpers removed per user request — placeholder file.
-// The original server/db.js was deleted to revert the repository to its prior state.
-
-// No runtime behavior here.
 import Database from 'better-sqlite3';
+
 import path from 'path';
 import { fileURLToPath } from 'url';
 
