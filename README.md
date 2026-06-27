@@ -4,9 +4,9 @@ Lumiere Royale is a premium, full-stack hotel management and booking platform de
 
 ![Lumiere Royale Hero](https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=2070)
 
-## ✨ Key Features
+##  Features
 
-- **🏨 Room Browsing**: Explore a curated list of luxury rooms with detailed specifications.
+- **🏨 Room Browsing**: Explore a list of luxury rooms with detailed specifications.
 - **📅 Real-time Booking**: Seamlessly book rooms with an intuitive calendar-based process.
 - **💳 Stripe Integration**: Secure payment processing for bookings using Stripe Checkout.
 - **📧 Automated Notifications**: Instant booking confirmations and daily reports via Nodemailer.
